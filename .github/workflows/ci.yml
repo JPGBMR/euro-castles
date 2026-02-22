@@ -1,0 +1,29 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  # Job id must be exactly 'lint' — branch protection context is 'CI / lint'
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      # npx --yes avoids a separate install step; htmlhint is fetched on demand
+      - name: Lint HTML
+        run: npx --yes htmlhint "**/*.html"
+
+      # Lighthouse is informational — never block a merge on score
+      # continue-on-error: true is non-negotiable per C-003 spec
+      - name: Lighthouse audit
+        continue-on-error: true
+        uses: treosh/lighthouse-ci-action@v11
+        with:
+          urls: |
+            https://jpgbmr.github.io/${{ github.event.repository.name }}/
+          uploadArtifacts: true
+          temporaryPublicStorage: true

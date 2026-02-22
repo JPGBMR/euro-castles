@@ -1,0 +1,117 @@
+[
+  {
+    "id": "Q72640",
+    "name": "Château de Chambord",
+    "alt_names": ["Chambord"],
+    "country": "FR",
+    "coords": { "lat": 47.6161, "lon": 1.5173 },
+    "osm": { "type": "way", "id": "51338021" },
+    "wikidata": "Q72640",
+    "wikipedia": "en:Château_de_Chambord",
+    "type": "palace",
+    "era": "16th c.",
+    "condition": "standing",
+    "opening_hours": "Mo-Su 09:00-18:00",
+    "website": "https://www.chambord.org",
+    "image": {
+      "thumb_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Château_de_Chambord_2017.jpg/320px-Château_de_Chambord_2017.jpg",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Château_de_Chambord_2017.jpg",
+      "license": "CC BY-SA 4.0"
+    },
+    "tags": ["public", "unesco"],
+    "source": "curated",
+    "last_verified": "2025-10-01"
+  },
+  {
+    "id": "Q72641",
+    "name": "Château de Chenonceau",
+    "alt_names": ["Chenonceau"],
+    "country": "FR",
+    "coords": { "lat": 47.3245, "lon": 1.0705 },
+    "osm": { "type": "way", "id": "51011259" },
+    "wikidata": "Q72641",
+    "wikipedia": "en:Château_de_Chenonceau",
+    "type": "palace",
+    "era": "16th c.",
+    "condition": "standing",
+    "opening_hours": "Mo-Su 09:30-18:00",
+    "website": "https://www.chenonceau.com",
+    "image": {
+      "thumb_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Chenonceau_castle%2C_France_%282%29.jpg/320px-Chenonceau_castle%2C_France_%282%29.jpg",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Chenonceau_castle,_France_(2).jpg",
+      "license": "CC BY-SA 4.0"
+    },
+    "tags": ["public"],
+    "source": "curated",
+    "last_verified": "2025-10-01"
+  },
+  {
+    "id": "Q30972",
+    "name": "Mont-Saint-Michel",
+    "alt_names": [],
+    "country": "FR",
+    "coords": { "lat": 48.6359, "lon": -1.5115 },
+    "osm": { "type": "relation", "id": "1887333" },
+    "wikidata": "Q30972",
+    "wikipedia": "en:Mont-Saint-Michel",
+    "type": "fortress",
+    "era": "13th c.",
+    "condition": "standing",
+    "opening_hours": "Mo-Su 09:00-19:00",
+    "website": "https://www.ot-montsaintmichel.com",
+    "image": {
+      "thumb_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Mont-Saint-Michel_vu_du_ciel.jpg/320px-Mont-Saint-Michel_vu_du_ciel.jpg",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Mont-Saint-Michel_vu_du_ciel.jpg",
+      "license": "CC BY-SA 4.0"
+    },
+    "tags": ["public", "unesco"],
+    "source": "curated",
+    "last_verified": "2025-10-01"
+  },
+  {
+    "id": "Q40852",
+    "name": "Cité de Carcassonne",
+    "alt_names": ["Carcassonne"],
+    "country": "FR",
+    "coords": { "lat": 43.2056, "lon": 2.363 },
+    "osm": { "type": "relation", "id": "954775" },
+    "wikidata": "Q40852",
+    "wikipedia": "en:Carcassonne",
+    "type": "fortress",
+    "era": "12th c.",
+    "condition": "standing",
+    "opening_hours": "Mo-Su 09:30-18:30",
+    "website": "https://www.remparts-carcassonne.fr",
+    "image": {
+      "thumb_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Carcassonne_Citadel.jpg/320px-Carcassonne_Citadel.jpg",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Carcassonne_Citadel.jpg",
+      "license": "CC BY-SA 3.0"
+    },
+    "tags": ["public", "unesco"],
+    "source": "curated",
+    "last_verified": "2025-10-01"
+  },
+  {
+    "id": "Q151228",
+    "name": "Château de Fontainebleau",
+    "alt_names": [],
+    "country": "FR",
+    "coords": { "lat": 48.4028, "lon": 2.6981 },
+    "osm": { "type": "way", "id": "52878303" },
+    "wikidata": "Q151228",
+    "wikipedia": "en:Palace_of_Fontainebleau",
+    "type": "palace",
+    "era": "16th c.",
+    "condition": "standing",
+    "opening_hours": "Mo,We-Mo 09:30-17:00",
+    "website": "https://www.chateaudefontainebleau.fr",
+    "image": {
+      "thumb_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Fontainebleau_Chateau_02.jpg/320px-Fontainebleau_Chateau_02.jpg",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Fontainebleau_Chateau_02.jpg",
+      "license": "CC BY-SA 3.0"
+    },
+    "tags": ["public", "unesco"],
+    "source": "curated",
+    "last_verified": "2025-10-01"
+  }
+]

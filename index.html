@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Europe Castles Atlas & Trails</title>
+  <meta name="description" content="Explore Europe’s castles on an interactive atlas, filter and search quickly, then plan 1-3 day routes with offline-friendly estimates and exports.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet.markercluster@1.5.3/dist/MarkerCluster.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet.markercluster@1.5.3/dist/MarkerCluster.Default.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet-routing-machine@3.2.12/dist/leaflet-routing-machine.css">
+  <script src="https://cdn.tailwindcss.com?plugins=forms"></script>
+  <link rel="stylesheet" href="assets/css/app.css">
+</head>
+<body class="app-body">
+  <header class="app-header">
+    <div>
+      <p class="eyebrow">Europe Castles</p>
+      <h1 class="page-title">Atlas + Trails Planner</h1>
+      <p class="lede">Browse Europe’s castles, refine the view with smart filters, then build 1-3 day routes that work online or offline.</p>
+    </div>
+    <div class="header-actions">
+      <label class="search-field">
+        <span class="sr-only">Search castles</span>
+        <input type="search" id="searchInput" placeholder="Search castles, countries, tags..." autocomplete="off">
+      </label>
+      <button id="filtersToggle" class="btn subtle">Filters &amp; Sort</button>
+      <button id="contrastToggle" class="btn subtle">Contrast</button>
+      <button id="motionToggle" class="btn subtle">Motion</button>
+      <button id="refreshData" class="btn primary">Update Data</button>
+    </div>
+  </header>
+
+  <main class="app-layout">
+    <section class="filters-shell" aria-label="Filters">
+      <div class="filters-panel" id="filtersPanel">
+        <h2>Quick filters</h2>
+        <div class="filters-grid">
+          <label>
+            <span>Country</span>
+            <select id="countryFilter">
+              <option value="">All</option>
+            </select>
+          </label>
+          <label>
+            <span>Type</span>
+            <select id="typeFilter">
+              <option value="">All</option>
+              <option>defensive</option>
+              <option>palace</option>
+              <option>fortress</option>
+              <option>manor</option>
+              <option>stately</option>
+              <option>ruins</option>
+            </select>
+          </label>
+          <label>
+            <span>Era</span>
+            <select id="eraFilter">
+              <option value="">All</option>
+              <option value="Medieval">Medieval</option>
+              <option value="Renaissance">Renaissance</option>
+              <option value="Baroque">Baroque</option>
+              <option value="Modern">Modern</option>
+            </select>
+          </label>
+          <label>
+            <span>Condition</span>
+            <select id="conditionFilter">
+              <option value="">All</option>
+              <option value="standing">Standing</option>
+              <option value="ruins">Ruins</option>
+              <option value="reconstructed">Reconstructed</option>
+            </select>
+          </label>
+          <label class="toggle-field">
+            <input type="checkbox" id="openingFilter">
+            <span>Opening hours known</span>
+          </label>
+          <label class="toggle-field">
+            <input type="checkbox" id="accessFilter">
+            <span>Public access</span>
+          </label>
+        </div>
+      </div>
+    </section>
+
+    <section class="map-panel">
+      <div id="map" role="application" aria-label="Europe castle map"></div>
+      <div class="map-overlay">
+        <div class="map-overlay__section">
+          <p class="text-xs font-semibold text-slate-400 uppercase tracking-wide">Routing</p>
+          <div class="overlay-row">
+            <label>
+              <span>Mode</span>
+              <select id="modeSelect">
+                <option value="car">Car</option>
+                <option value="bike">Bike</option>
+                <option value="walk">Walk</option>
+              </select>
+            </label>
+            <label>
+              <span>Engine</span>
+              <select id="engineSelect">
+                <option value="osrm">OSRM</option>
+                <option value="offline">Offline</option>
+              </select>
+            </label>
+            <label>
+              <span>Daily hrs</span>
+              <input type="number" id="dailyHours" value="5" step="0.5" min="1" max="10">
+            </label>
+          </div>
+          <div class="overlay-row gap">
+            <button id="optimizeRoute" class="btn secondary w-full">Optimize Order</button>
+            <button id="clearRoute" class="btn subtle w-full">Clear Route</button>
+          </div>
+        </div>
+        <div class="map-overlay__section">
+          <div class="sm-flex">
+            <button id="exportGpx" class="btn ghost">GPX</button>
+            <button id="exportKml" class="btn ghost">KML</button>
+            <button id="exportIcs" class="btn ghost">ICS</button>
+            <button id="exportCsv" class="btn ghost">CSV</button>
+            <button id="shareUrl" class="btn ghost">Share</button>
+            <button id="printPlan" class="btn ghost">Print</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="atlas-panel" aria-label="Castle cards">
+      <div class="cards-grid" id="cardsGrid" tabindex="0" aria-live="polite"></div>
+    </section>
+  </main>
+
+  <aside class="details-drawer" id="detailsDrawer" aria-hidden="true">
+    <button class="drawer-close" id="drawerClose">&times;</button>
+    <div id="drawerContent"></div>
+  </aside>
+
+  <section class="planner-panel" aria-label="Trails planner">
+    <header>
+      <h2 class="text-lg font-semibold">Trip planner</h2>
+      <p class="text-sm text-slate-400">Select castles to build a 1-3 day itinerary.</p>
+    </header>
+    <ol id="plannerList" class="planner-list" aria-live="polite"></ol>
+    <div class="planner-summary" id="plannerSummary">
+      <p>Total Distance: <span id="totalDistance">0 km</span></p>
+      <p>Estimated Time: <span id="totalTime">0 h</span></p>
+      <div id="daySplit"></div>
+    </div>
+  </section>
+
+  <template id="cardTemplate">
+    <article class="castle-card">
+      <button class="card-select" data-action="select">Add</button>
+      <div class="card-thumb" role="img"></div>
+      <div class="card-body">
+        <h3 class="card-title"></h3>
+        <p class="card-meta"></p>
+        <div class="chip-row"></div>
+        <p class="mt-1">
+          <a class="btn ghost w-full" data-action="details" href="#details">Details</a>
+        </p>
+      </div>
+    </article>
+  </template>
+
+  <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/leaflet-routing-machine@3.2.12/dist/leaflet-routing-machine.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lz-string@1.5.0/libs/lz-string.min.js"></script>
+  <script src="assets/js/lib/fuse.min.js"></script>
+  <script src="assets/js/app.js" type="module"></script>
+</body>
+</html>
+
+
+

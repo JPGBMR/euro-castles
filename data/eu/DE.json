@@ -1,0 +1,117 @@
+[
+  {
+    "id": "Q157260",
+    "name": "Neuschwanstein Castle",
+    "alt_names": ["Schloss Neuschwanstein"],
+    "country": "DE",
+    "coords": { "lat": 47.5576, "lon": 10.7498 },
+    "osm": { "type": "way", "id": "130993394" },
+    "wikidata": "Q157260",
+    "wikipedia": "en:Neuschwanstein_Castle",
+    "type": "palace",
+    "era": "19th c.",
+    "condition": "standing",
+    "opening_hours": "Mo-Su 10:00-16:00",
+    "website": "https://www.neuschwanstein.de",
+    "image": {
+      "thumb_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Schloss_Neuschwanstein_2013.jpg/320px-Schloss_Neuschwanstein_2013.jpg",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Schloss_Neuschwanstein_2013.jpg",
+      "license": "CC BY-SA 3.0"
+    },
+    "tags": ["public", "unesco"],
+    "source": "curated",
+    "last_verified": "2025-10-01"
+  },
+  {
+    "id": "Q57614",
+    "name": "Hohenzollern Castle",
+    "alt_names": ["Burg Hohenzollern"],
+    "country": "DE",
+    "coords": { "lat": 48.325, "lon": 8.963 },
+    "osm": { "type": "way", "id": "41764430" },
+    "wikidata": "Q57614",
+    "wikipedia": "en:Hohenzollern_Castle",
+    "type": "defensive",
+    "era": "19th c.",
+    "condition": "standing",
+    "opening_hours": "Mo-Su 10:00-17:00",
+    "website": "https://www.burg-hohenzollern.com",
+    "image": {
+      "thumb_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Burg_Hohenzollern_Sonnenuntergang.jpg/320px-Burg_Hohenzollern_Sonnenuntergang.jpg",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Burg_Hohenzollern_Sonnenuntergang.jpg",
+      "license": "CC BY-SA 4.0"
+    },
+    "tags": ["public"],
+    "source": "curated",
+    "last_verified": "2025-10-01"
+  },
+  {
+    "id": "Q46416",
+    "name": "Wartburg Castle",
+    "alt_names": ["Burg Wartburg"],
+    "country": "DE",
+    "coords": { "lat": 50.9626, "lon": 10.3069 },
+    "osm": { "type": "way", "id": "180818821" },
+    "wikidata": "Q46416",
+    "wikipedia": "en:Wartburg",
+    "type": "defensive",
+    "era": "12th c.",
+    "condition": "standing",
+    "opening_hours": "Mo-Su 09:00-17:00",
+    "website": "https://www.wartburg.de",
+    "image": {
+      "thumb_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Wartburg_Ostseite.jpg/320px-Wartburg_Ostseite.jpg",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Wartburg_Ostseite.jpg",
+      "license": "CC BY-SA 3.0"
+    },
+    "tags": ["public", "unesco"],
+    "source": "curated",
+    "last_verified": "2025-10-01"
+  },
+  {
+    "id": "Q154020",
+    "name": "Heidelberg Castle",
+    "alt_names": ["Schloss Heidelberg"],
+    "country": "DE",
+    "coords": { "lat": 49.4106, "lon": 8.7153 },
+    "osm": { "type": "way", "id": "32858271" },
+    "wikidata": "Q154020",
+    "wikipedia": "en:Heidelberg_Castle",
+    "type": "palace",
+    "era": "16th c.",
+    "condition": "ruins",
+    "opening_hours": "Mo-Su 09:00-17:00",
+    "website": "https://www.schloss-heidelberg.de",
+    "image": {
+      "thumb_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/HeidelbergSchloss.jpg/320px-HeidelbergSchloss.jpg",
+      "page_url": "https://commons.wikimedia.org/wiki/File:HeidelbergSchloss.jpg",
+      "license": "CC BY-SA 3.0"
+    },
+    "tags": ["public"],
+    "source": "curated",
+    "last_verified": "2025-10-01"
+  },
+  {
+    "id": "Q738014",
+    "name": "Eltz Castle",
+    "alt_names": ["Burg Eltz"],
+    "country": "DE",
+    "coords": { "lat": 50.2051, "lon": 7.3369 },
+    "osm": { "type": "way", "id": "67837954" },
+    "wikidata": "Q738014",
+    "wikipedia": "en:Eltz_Castle",
+    "type": "defensive",
+    "era": "12th c.",
+    "condition": "standing",
+    "opening_hours": "Mo-Su 09:30-17:30",
+    "website": "https://burg-eltz.de",
+    "image": {
+      "thumb_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Burg_Eltz_2013.jpg/320px-Burg_Eltz_2013.jpg",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Burg_Eltz_2013.jpg",
+      "license": "CC BY-SA 3.0"
+    },
+    "tags": ["public"],
+    "source": "curated",
+    "last_verified": "2025-10-01"
+  }
+]

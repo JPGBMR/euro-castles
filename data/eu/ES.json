@@ -1,0 +1,117 @@
+[
+  {
+    "id": "Q133507",
+    "name": "Alcázar of Segovia",
+    "alt_names": [],
+    "country": "ES",
+    "coords": { "lat": 40.9523, "lon": -4.1316 },
+    "osm": { "type": "way", "id": "53995690" },
+    "wikidata": "Q133507",
+    "wikipedia": "en:Alcázar_of_Segovia",
+    "type": "defensive",
+    "era": "12th c.",
+    "condition": "standing",
+    "opening_hours": "Mo-Su 10:00-20:00",
+    "website": "https://www.alcazardesegovia.com",
+    "image": {
+      "thumb_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Alcazar_de_Segovia_02.jpg/320px-Alcazar_de_Segovia_02.jpg",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Alcazar_de_Segovia_02.jpg",
+      "license": "CC BY-SA 3.0"
+    },
+    "tags": ["public"],
+    "source": "curated",
+    "last_verified": "2025-10-01"
+  },
+  {
+    "id": "Q12548",
+    "name": "Alhambra",
+    "alt_names": [],
+    "country": "ES",
+    "coords": { "lat": 37.1761, "lon": -3.5881 },
+    "osm": { "type": "relation", "id": "1151040" },
+    "wikidata": "Q12548",
+    "wikipedia": "en:Alhambra",
+    "type": "fortress",
+    "era": "14th c.",
+    "condition": "standing",
+    "opening_hours": "Mo-Su 08:30-20:00",
+    "website": "https://www.alhambra-patronato.es",
+    "image": {
+      "thumb_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Alhambra_Granada_Spain.jpg/320px-Alhambra_Granada_Spain.jpg",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Alhambra_Granada_Spain.jpg",
+      "license": "CC BY-SA 3.0"
+    },
+    "tags": ["public", "unesco"],
+    "source": "curated",
+    "last_verified": "2025-10-01"
+  },
+  {
+    "id": "Q142212",
+    "name": "Castillo de Belmonte",
+    "alt_names": [],
+    "country": "ES",
+    "coords": { "lat": 39.5557, "lon": -2.7093 },
+    "osm": { "type": "way", "id": "55842163" },
+    "wikidata": "Q142212",
+    "wikipedia": "en:Castle_of_Belmonte",
+    "type": "defensive",
+    "era": "15th c.",
+    "condition": "standing",
+    "opening_hours": "Tu-Su 10:00-19:00",
+    "website": "https://www.castillodebelmonte.com",
+    "image": {
+      "thumb_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Castillo_de_Belmonte%2C_Cuenca.jpg/320px-Castillo_de_Belmonte%2C_Cuenca.jpg",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Castillo_de_Belmonte,_Cuenca.jpg",
+      "license": "CC BY-SA 3.0"
+    },
+    "tags": ["public"],
+    "source": "curated",
+    "last_verified": "2025-10-01"
+  },
+  {
+    "id": "Q288530",
+    "name": "Castle of Santa Bárbara",
+    "alt_names": [],
+    "country": "ES",
+    "coords": { "lat": 38.3454, "lon": -0.4734 },
+    "osm": { "type": "way", "id": "24703817" },
+    "wikidata": "Q288530",
+    "wikipedia": "en:Santa_Bárbara_Castle",
+    "type": "defensive",
+    "era": "16th c.",
+    "condition": "standing",
+    "opening_hours": "Mo-Su 10:00-22:00",
+    "website": "https://alicante.es/en/castle-santa-barbara",
+    "image": {
+      "thumb_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Castillo_de_Santa_Bárbara,_Alicante,_España,_2014-07-05,_DD_56.JPG/320px-Castillo_de_Santa_Bárbara,_Alicante,_España,_2014-07-05,_DD_56.JPG",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Castillo_de_Santa_Bárbara,_Alicante,_España,_2014-07-05,_DD_56.JPG",
+      "license": "CC BY-SA 4.0"
+    },
+    "tags": ["public"],
+    "source": "curated",
+    "last_verified": "2025-10-01"
+  },
+  {
+    "id": "Q170006",
+    "name": "Loarre Castle",
+    "alt_names": [],
+    "country": "ES",
+    "coords": { "lat": 42.3154, "lon": -0.6215 },
+    "osm": { "type": "way", "id": "25221111" },
+    "wikidata": "Q170006",
+    "wikipedia": "en:Loarre_Castle",
+    "type": "defensive",
+    "era": "11th c.",
+    "condition": "standing",
+    "opening_hours": "Mo-Su 10:00-20:00",
+    "website": "https://www.castillodeloarre.es",
+    "image": {
+      "thumb_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Loarre_Castle.jpg/320px-Loarre_Castle.jpg",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Loarre_Castle.jpg",
+      "license": "CC BY-SA 3.0"
+    },
+    "tags": ["public"],
+    "source": "curated",
+    "last_verified": "2025-10-01"
+  }
+]
